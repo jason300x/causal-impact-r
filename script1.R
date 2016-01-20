@@ -147,9 +147,9 @@ PX2=((n/PA)*(i+1)+2)
 
 #print(PX1)
 #print(PX2)
+
 if((x>=0.700 & Rel>=0.0040) &i==1)
 {
-
 for( i1 in PX1:PX2)
 {
 #najważniejsza rzecz do zmiany
@@ -158,18 +158,8 @@ data2<-cbind(y1,x1)
 }
 
 i=i
+}
 
-}
-else if((x>=0.700 & Rel>=0.0040) &i>1)
-{
-for( i1 in PX1:PX2)
-{
-#najważniejsza rzecz do zmiany
-y1[i1]=y3[i1]
-data2<-cbind(y1,x1)
-}
-i=i
-}
 else
 {
 i=i+1
